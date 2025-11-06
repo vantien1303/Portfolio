@@ -14,7 +14,7 @@
 <body class="text-light" data-spy="scroll" data-target=".navbar" data-offset="70">
 <!--Thanh Navbar giữ nguyên khi lăn chuột, tên hover màu đỏ 6s, giữa hover màu cam đất, icon thì theo màu thương hiệu-->
 <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #2D2D3A; position: sticky; top: 0; z-index: 1000;">
-	<a class="navbar-brand font-weight-bolder" href="#">VANTIEN.</a>
+	<a class="navbar-brand font-weight-bolder" href="#" id="siteTitle">VANTIEN.</a>
   <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
     <span class="navbar-toggler-icon"></span>
   </button> 
@@ -257,14 +257,14 @@
         </div>
 
         <!-- Member 2 -->
-        <div class="col-10 col-md-6 col-lg-5 p-4">
+        <!-- <div class="col-10 col-md-6 col-lg-5 p-4">
           <div class="p-4 rounded shadow-sm text-white h-100" style="background-color:#2D2D3A">
             <img src="images/487498883_1773254933223904_6007238872025531989_n.jpg" class="img-fluid mb-3 rounded" style="width: 250px; height: 250px; object-fit: cover;" alt="Nguyen Nhat Hao">
             <h4><b>Nguyễn Nhật Hào</b></h4>
             <i><p>Web Designer</p></i>
             <p class="mb-0">"Strong understanding of design principles and user experience ensures every site is both visually compelling and functionally seamless."</p>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
   </div>
@@ -362,7 +362,31 @@
       }
     });
   });
-</script><!-- dùng script ngăn lăn lên cũng thua -->
+</script>
+<script>
+  let clickCount = 0;
+  let clickTimer;
+
+  document.getElementById("siteTitle").addEventListener("click", function () {
+    clickCount++;
+
+    // Nếu ấn 3 lần liên tục trong vòng 1 giây
+    if (clickCount === 3) {
+      window.location.href = "admin upload.html"; // 👉 đổi sang link bạn muốn
+      clickCount = 0;
+      clearTimeout(clickTimer);
+    }
+
+    // Reset đếm sau 1 giây nếu không đủ 3 lần
+    clearTimeout(clickTimer);
+    clickTimer = setTimeout(() => {
+      clickCount = 0;
+    }, 1000);
+  });
+</script>
+
+	
+<!-- dùng script ngăn lăn lên cũng thua -->
 <!--<script src="js/jquery-3.4.1.min.js"></script>
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap-4.4.1.js"></script>
