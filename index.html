@@ -9,6 +9,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap&subset=vietnamese" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href="css/lightbox.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+
 
 </head>
 <body class="text-light" data-spy="scroll" data-target=".navbar" data-offset="70">
@@ -125,76 +127,121 @@
   </div>
 </section>
 <!-- Projects Section -->
-<section id="Projects" class="container-fluid d-flex justify-content-center align-items-center text-center min-vh-93">
-  <div class="container py-5">
-    <h1 class="text-center font-weight-bolder mb-4">My Projects</h1>
+<section id="Projects" class="container-fluid py-5 text-center">
+  <h1 class="font-weight-bold mb-4">My Projects</h1>
 
-    <!-- Tab navigation -->
-	  <ul class="nav nav-pills justify-content-center border-bottom pb-3 font-weight-bold" role="tablist">
-		<li class="nav-item"><a href="" data-toggle="pill" data-target="#tabone" class="nav-link active">Brand Identity</a></li>
-		<li class="nav-item"><a href="" data-toggle="pill" data-target="#tabtwo" class="nav-link">Posters</a></li>
-		<li class="nav-item"><a href="" data-toggle="pill" data-target="#tabthree" class="nav-link">Packaging</a></li>
- 	  </ul>
-
-	  <!-- Tab content -->
-    <div class="tab-content mt-4" id="pills-tabContent">
-
-      <!-- Brand Identity -->
-      <div class="tab-pane fade show active" id="tabone" role="tabpanel" aria-labelledby="pills-one-tab">
-        <div class="row justify-content-center">
-          <div class="col-lg-3 col-md-6 col-sm-12 p-3">
-            <a href="images/BrandGuidelines_ANTKEY-18.jpg" data-lightbox="roadtrip">
-              <img src="images/BrandGuidelines_ANTKEY-18.jpg" class="img-fluid img-square" alt="Brand Identity 1">
-            </a>
-          </div>
-          <div class="col-lg-3 col-md-6 col-sm-12 p-3">
-            <a href="images/BrandGuidelines_ANTKEY-69.jpg" data-lightbox="roadtrip">
-              <img src="images/BrandGuidelines_ANTKEY-69.jpg" class="img-fluid img-square" alt="Brand Identity 2">
-            </a>
-          </div>
-          <div class="col-lg-3 col-md-6 col-sm-12 p-3">
-            <a href="images/BrandGuidelines_ANTKEY-71.jpg" data-lightbox="roadtrip">
-              <img src="images/BrandGuidelines_ANTKEY-71.jpg" class="img-fluid img-square" alt="Brand Identity 3">
-            </a>
-          </div>
-          <div class="col-lg-3 col-md-6 col-sm-12 p-3">
-            <a href="images/BrandGuidelines_ANTKEY-79.jpg" data-lightbox="roadtrip">
-              <img src="images/BrandGuidelines_ANTKEY-79.jpg" class="img-fluid img-square" alt="Brand Identity 4">
-            </a>
-          </div>
+  <div class="row justify-content-center">
+    <!-- === PROJECT CARD (ví dụ 1) === -->
+    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-2 px-1">
+      <div class="project-card"
+           data-title="Brand Identity"
+           data-desc="Visual branding & design system"
+           data-video="https://www.youtube.com/embed/dQw4w9WgXcQ"
+           data-images="
+             images/BrandGuidelines_ANTKEY-18.jpg,
+             images/BrandGuidelines_ANTKEY-18.jpg,images/BrandGuidelines_ANTKEY-18.jpg,images/BrandGuidelines_ANTKEY-18.jpg,
+             images/BrandGuidelines_ANTKEY-18.jpg,
+             images/BrandGuidelines_ANTKEY-18.jpg,
+             images/BrandGuidelines_ANTKEY-18.jpg,images/BrandGuidelines_ANTKEY-18.jpg,images/BrandGuidelines_ANTKEY-18.jpg,images/BrandGuidelines_ANTKEY-18.jpg,images/BrandGuidelines_ANTKEY-18.jpg,images/BrandGuidelines_ANTKEY-18.jpg,images/BrandGuidelines_ANTKEY-18.jpg"
+           data-layouts="full,grid,grid,grid,full,full,grid,grid,grid,grid,grid,grid,grid">
+        <img src="images/BrandGuidelines_ANTKEY-18.jpg" class="project-img" alt="Project 1">
+        <div class="project-overlay">
+          <h4>Brand Identity</h4>
+          <p>Visual branding & design system</p>
         </div>
       </div>
-
-      <!-- Posters -->
-      <div class="tab-pane fade" id="tabtwo" role="tabpanel" aria-labelledby="pills-two-tab">
-        <div class="row justify-content-center">
-          <div class="col-lg-3 col-md-6 col-sm-12 p-3">
-            <a href="images/BrandGuidelines_ANTKEY-69.jpg" data-lightbox="roadtrip">
-              <img src="images/BrandGuidelines_ANTKEY-70.jpg" class="img-fluid img-square" alt="Poster 1">
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Packaging -->
-      <div class="tab-pane fade" id="tabthree" role="tabpanel" aria-labelledby="pills-three-tab">
-        <div class="row justify-content-center">
-          <div class="col-lg-3 col-md-6 col-sm-12 p-3">
-            <a href="images/Artboard 1-8.png" data-lightbox="roadtrip">
-              <img src="images/screenshot_1738815716.jpg" class="img-fluid img-square" alt="Packaging 1">
-            </a>
-          </div>
-          <div class="col-lg-3 col-md-6 col-sm-12 p-3">
-            <a href="images/Artboard-2-8.jpg" data-lightbox="roadtrip">
-              <img src="images/BrandGuidelines_ANTKEY-65.jpg" class="img-fluid img-square" alt="Packaging 2">
-            </a>
-          </div>
-        </div>
-      </div>
-
     </div>
+    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-2 px-1">
+      <div class="project-card"
+           data-title="Brand Identity"
+           data-desc="Visual branding & design system"
+           data-video="https://www.youtube.com/embed/dQw4w9WgXcQ"
+           data-images="
+             images/BrandGuidelines_ANTKEY-18.jpg,
+             images/BrandGuidelines_ANTKEY-18.jpg,images/BrandGuidelines_ANTKEY-18.jpg,images/BrandGuidelines_ANTKEY-18.jpg,
+             images/BrandGuidelines_ANTKEY-18.jpg,
+             images/BrandGuidelines_ANTKEY-18.jpg,
+             images/BrandGuidelines_ANTKEY-18.jpg,images/BrandGuidelines_ANTKEY-18.jpg,images/BrandGuidelines_ANTKEY-18.jpg,images/BrandGuidelines_ANTKEY-18.jpg,images/BrandGuidelines_ANTKEY-18.jpg,images/BrandGuidelines_ANTKEY-18.jpg,images/BrandGuidelines_ANTKEY-18.jpg"
+           data-layouts="full,grid,grid,grid,full,full,grid,grid,grid,grid,grid,grid,grid">
+        <img src="images/BrandGuidelines_ANTKEY-18.jpg" class="project-img" alt="Project 1">
+        <div class="project-overlay">
+          <h4>Brand Identity</h4>
+          <p>Visual branding & design system</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-2 px-1">
+      <div class="project-card"
+           data-title="Brand Identity"
+           data-desc="Visual branding & design system"
+           data-video="https://www.youtube.com/embed/dQw4w9WgXcQ"
+           data-images="
+             images/BrandGuidelines_ANTKEY-18.jpg,
+             images/BrandGuidelines_ANTKEY-18.jpg,images/BrandGuidelines_ANTKEY-18.jpg,images/BrandGuidelines_ANTKEY-18.jpg,
+             images/BrandGuidelines_ANTKEY-18.jpg,
+             images/BrandGuidelines_ANTKEY-18.jpg,
+             images/BrandGuidelines_ANTKEY-18.jpg,images/BrandGuidelines_ANTKEY-18.jpg,images/BrandGuidelines_ANTKEY-18.jpg,images/BrandGuidelines_ANTKEY-18.jpg,images/BrandGuidelines_ANTKEY-18.jpg,images/BrandGuidelines_ANTKEY-18.jpg,images/BrandGuidelines_ANTKEY-18.jpg"
+           data-layouts="full,grid,grid,grid,full,full,grid,grid,grid,grid,grid,grid,grid">
+        <img src="images/BrandGuidelines_ANTKEY-18.jpg" class="project-img" alt="Project 1">
+        <div class="project-overlay">
+          <h4>Brand Identity</h4>
+          <p>Visual branding & design system</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-2 px-1">
+      <div class="project-card"
+           data-title="Brand Identity"
+           data-desc="Visual branding & design system"
+           data-video="https://www.youtube.com/embed/dQw4w9WgXcQ"
+           data-images="
+             images/BrandGuidelines_ANTKEY-18.jpg,
+             images/BrandGuidelines_ANTKEY-18.jpg,images/BrandGuidelines_ANTKEY-18.jpg,images/BrandGuidelines_ANTKEY-18.jpg,
+             images/BrandGuidelines_ANTKEY-18.jpg,
+             images/BrandGuidelines_ANTKEY-18.jpg,
+             images/BrandGuidelines_ANTKEY-18.jpg,images/BrandGuidelines_ANTKEY-18.jpg,images/BrandGuidelines_ANTKEY-18.jpg,images/BrandGuidelines_ANTKEY-18.jpg,images/BrandGuidelines_ANTKEY-18.jpg,images/BrandGuidelines_ANTKEY-18.jpg,images/BrandGuidelines_ANTKEY-18.jpg"
+           data-layouts="full,grid,grid,grid,full,full,grid,grid,grid,grid,grid,grid,grid">
+        <img src="images/BrandGuidelines_ANTKEY-18.jpg" class="project-img" alt="Project 1">
+        <div class="project-overlay">
+          <h4>Brand Identity</h4>
+          <p>Visual branding & design system</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-2 px-1">
+      <div class="project-card"
+           data-title="Brand Identity"
+           data-desc="Visual branding & design system"
+           data-video="https://www.youtube.com/embed/dQw4w9WgXcQ"
+           data-images="
+             images/BrandGuidelines_ANTKEY-18.jpg,
+             images/BrandGuidelines_ANTKEY-18.jpg,images/BrandGuidelines_ANTKEY-18.jpg,images/BrandGuidelines_ANTKEY-18.jpg,
+             images/BrandGuidelines_ANTKEY-18.jpg,
+             images/BrandGuidelines_ANTKEY-18.jpg,
+             images/BrandGuidelines_ANTKEY-18.jpg,images/BrandGuidelines_ANTKEY-18.jpg,images/BrandGuidelines_ANTKEY-18.jpg,images/BrandGuidelines_ANTKEY-18.jpg,images/BrandGuidelines_ANTKEY-18.jpg,images/BrandGuidelines_ANTKEY-18.jpg,images/BrandGuidelines_ANTKEY-18.jpg"
+           data-layouts="full,grid,grid,grid,full,full,grid,grid,grid,grid,grid,grid,grid">
+        <img src="images/BrandGuidelines_ANTKEY-18.jpg" class="project-img" alt="Project 1">
+        <div class="project-overlay">
+          <h4>Brand Identity</h4>
+          <p>Visual branding & design system</p>
+        </div>
+      </div>
+    </div>
+
   </div>
 </section>
+
+<!-- === POPUP HIỂN THỊ CHI TIẾT PROJECT === -->
+<div id="projectPopup" class="project-popup" style="display:none;">
+  <div class="popup-content">
+    <span class="close-btn">&times;</span>
+    <h3 class="popup-title"></h3>
+    <p class="popup-desc"></p>
+    <div class="popup-video" id="popupVideoContainer"></div>
+    <div id="popupMainImageContainer"></div>
+    <div class="image-grid" id="popupGridImagesContainer"></div>
+  </div>
+</div>
 <!-- Services Section -->
 <section id="Services" class="container-fluid d-flex justify-content-center align-items-center text-center min-vh-93">
 <div class="py-3 text-center p-5">
@@ -383,6 +430,111 @@
       clickCount = 0;
     }, 1000);
   });
+</script>
+<script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+<script>
+$(document).ready(function() {
+  let lightbox = null;
+
+  function closePopup() {
+    $("#projectPopup").fadeOut(200);
+    $("body").css("overflow", "auto");
+
+    if (lightbox) {
+      try { lightbox.destroy(); } catch (e) {}
+      lightbox = null;
+    }
+
+    $("#popupVideoContainer, #popupMainImageContainer, #popupGridImagesContainer").html("");
+  }
+
+  $(".project-card").on("click", function() {
+    const title = $(this).data("title");
+    const desc = $(this).data("desc");
+    const videoURL = $(this).data("video");
+
+    $(".popup-title").text(title || "");
+    $(".popup-desc").text(desc || "");
+
+    // --- VIDEO ---
+    if (videoURL) {
+      let src = videoURL;
+      const m = videoURL.match(/(?:watch\?v=|youtu\.be\/)([\w-]+)/);
+      if (m && !videoURL.includes('embed')) src = 'https://www.youtube.com/embed/' + m[1];
+      $("#popupVideoContainer").html(`<iframe src="${src}" frameborder="0" allowfullscreen loading="lazy"></iframe>`).show();
+    } else {
+      $("#popupVideoContainer").hide();
+    }
+
+    // --- ẢNH (FULL + GRID) ---
+    $("#popupMainImageContainer").html("");
+    const allImages = [];
+    const imgs = String($(this).data("images") || "").split(",").map(s => s.trim()).filter(Boolean);
+    const layouts = String($(this).data("layouts") || "").split(",").map(s => s.trim());
+    imgs.forEach((src, idx) => {
+      const type = layouts[idx] || "grid";
+      allImages.push({ src, type });
+    });
+
+    const galleryId = 'g_' + Date.now();
+    let currentGrid = null;
+
+    allImages.forEach(img => {
+  if (img.type === "full") {
+    // ✅ nếu có grid trước đó, chèn vào rồi reset
+    if (currentGrid) {
+      $("#popupMainImageContainer").append(
+        $('<div class="element-wrapper"></div>').append(currentGrid)
+      );
+      currentGrid = null;
+    }
+
+    // ✅ chèn ảnh full riêng
+    $("#popupMainImageContainer").append(`
+      <div class="popup-full-container element-wrapper">
+        <img src="${img.src}" alt="">
+      </div>
+    `);
+  } else {
+    // ✅ gom ảnh grid
+    if (!currentGrid) currentGrid = $('<div class="photo-grid"></div>');
+    currentGrid.append(`
+      <a href="${img.src}" class="glightbox" data-gallery="${galleryId}">
+        <img src="${img.src}" alt="">
+      </a>
+    `);
+  }
+});
+
+// ✅ nếu còn grid cuối cùng thì thêm nốt vào container
+if (currentGrid) {
+  $("#popupMainImageContainer").append(
+    $('<div class="element-wrapper"></div>').append(currentGrid)
+  );
+}
+
+    if (currentGrid) $("#popupMainImageContainer").append(currentGrid);
+
+    if (lightbox) {
+      try { lightbox.destroy(); } catch (e) {}
+      lightbox = null;
+    }
+    setTimeout(() => {
+      lightbox = GLightbox({ selector: 'a.glightbox[data-gallery="' + galleryId + '"]' });
+    }, 50);
+
+    $("#projectPopup").fadeIn(200);
+    $("body").css("overflow", "hidden");
+  });
+
+  $(".close-btn").on("click", closePopup);
+  $("#projectPopup").on("click", function(e) {
+    if ($(e.target).is("#projectPopup")) closePopup();
+  });
+  $(document).on("keydown", function(e) {
+    if (e.key === "Escape") closePopup();
+  });
+});
 </script>
 
 	
